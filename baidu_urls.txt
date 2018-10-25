@@ -1,0 +1,3 @@
+https://retr67.github.io/2018/10/26/随机函数/
+https://retr67.github.io/2018/10/25/fread快读/
+https://retr67.github.io/2018/10/25/hello-world/
