@@ -331,7 +331,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-02-11 22:11:16 / 修改时间：22:12:11" itemprop="dateCreated datePublished" datetime="2025-02-11T22:11:16+08:00">2025-02-11</time>
+      <time title="创建时间：2025-02-11 22:11:16 / 修改时间：22:23:28" itemprop="dateCreated datePublished" datetime="2025-02-11T22:11:16+08:00">2025-02-11</time>
     </span>
 
   
@@ -347,7 +347,7 @@
           <p><strong>关于我自己个人对随机值的一些了解，以及水分（RP++）模板</strong></p>
 <p><strong>srand(unsigned(time(NULL)));</strong> 根据当前时间生成随机种子</p>
 <p><strong>rand()</strong> 根据种子生成值</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;time.h&gt;</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#define re register</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">	srand(unsigned(time(NULL)));</span><br><span class="line">	rand()%2?puts(&quot;Yes&quot;):puts(&quot;No&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
