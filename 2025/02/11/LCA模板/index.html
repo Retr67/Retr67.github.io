@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"retr67.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="题目给定一棵有根多叉树，请求出指定两个点直接最近的公共祖先。 洛谷题目链接 读入格式第一行包含三个正整数N、M、S，分别表示树的结点个数、询问的个数和树根结点的序号。 接下来N-1行每行包含两个正整数x、y，表示x结点和y结点之间有一条直接连接的边（数据保证可以构成树）。 接下来M行每行包含两个正整数a、b，表示询问a结点和b结点的最近公共祖先。 输出格式输出包含M行，每行包含一个正整数，依次为每">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LCA模板">
+<meta property="og:url" content="http://retr67.github.io/2025/02/11/LCA%E6%A8%A1%E6%9D%BF/index.html">
+<meta property="og:site_name" content="Retr67的小站">
+<meta property="og:description" content="题目给定一棵有根多叉树，请求出指定两个点直接最近的公共祖先。 洛谷题目链接 读入格式第一行包含三个正整数N、M、S，分别表示树的结点个数、询问的个数和树根结点的序号。 接下来N-1行每行包含两个正整数x、y，表示x结点和y结点之间有一条直接连接的边（数据保证可以构成树）。 接下来M行每行包含两个正整数a、b，表示询问a结点和b结点的最近公共祖先。 输出格式输出包含M行，每行包含一个正整数，依次为每">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-02-11T14:14:10.000Z">
+<meta property="article:modified_time" content="2025-02-11T14:16:33.100Z">
+<meta property="article:author" content="Retr67">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="模板">
+<meta property="article:tag" content="LCA">
+<meta property="article:tag" content="图">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://retr67.github.io/2025/02/11/LCA%E6%A8%A1%E6%9D%BF/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://retr67.github.io/2025/02/11/LCA%E6%A8%A1%E6%9D%BF/","path":"2025/02/11/LCA模板/","title":"LCA模板"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LCA模板 | Retr67的小站</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Retr67的小站</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BB%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">读入格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B%E4%B8%80"><span class="nav-number">4.</span> <span class="nav-text">输出样例一</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%98%E8%A7%A3"><span class="nav-number">5.</span> <span class="nav-text">题解</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Retr67</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://retr67.github.io/2025/02/11/LCA%E6%A8%A1%E6%9D%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Retr67">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Retr67的小站">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LCA模板 | Retr67的小站">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LCA模板
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-02-11 22:14:10 / 修改时间：22:16:33" itemprop="dateCreated datePublished" datetime="2025-02-11T22:14:10+08:00">2025-02-11</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>给定一棵有根多叉树，请求出指定两个点直接最近的公共祖先。</p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P3379">洛谷题目链接</a></p>
+<h1 id="读入格式"><a href="#读入格式" class="headerlink" title="读入格式"></a><a href="#%E8%AF%BB%E5%85%A5%E6%A0%BC%E5%BC%8F" title="读入格式"></a><strong>读入格式</strong></h1><p>第一行包含三个正整数N、M、S，分别表示树的结点个数、询问的个数和树根结点的序号。</p>
+<p>接下来N-1行每行包含两个正整数x、y，表示x结点和y结点之间有一条直接连接的边（数据保证可以构成树）。</p>
+<p>接下来M行每行包含两个正整数a、b，表示询问a结点和b结点的最近公共祖先。</p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F" title="输出格式"></a><strong>输出格式</strong></h1><p>输出包含M行，每行包含一个正整数，依次为每一个询问的结果。</p>
+<p><strong>输入样例一</strong></p>
+<p>5 5 4<br>3 1<br>2 4<br>5 1<br>1 4<br>2 4<br>3 2<br>3 5<br>1 2<br>4 5</p>
+<h1 id="输出样例一"><a href="#输出样例一" class="headerlink" title="输出样例一"></a><a href="#%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B%E4%B8%80" title="输出样例一"></a><strong>输出样例一</strong></h1><p>4<br>4<br>1<br>4<br>4</p>
+<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a><a href="#%E9%A2%98%E8%A7%A3" title="题解"></a><strong>题解</strong></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#define re register</span><br><span class="line"></span><br><span class="line">//类模板快读 </span><br><span class="line">template &lt;class T&gt; inline void read(T &amp;x) &#123;</span><br><span class="line">	x=0;char c=getchar();</span><br><span class="line">	for(; &#x27;0&#x27;&gt;c || c&gt;&#x27;9&#x27;; c=getchar());</span><br><span class="line">	for(; &#x27;0&#x27;&lt;=c &amp;&amp; c&lt;=&#x27;9&#x27;; c=getchar()) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//边数 </span><br><span class="line">int cnt;</span><br><span class="line"></span><br><span class="line">//双向建边，双倍空间，不做过多解释 </span><br><span class="line">int To[1000005],Next[1000005],head[500005],d[500005];</span><br><span class="line"></span><br><span class="line">//fa[u][i]为u往上跳2^i个点所到达的父亲 </span><br><span class="line">int fa[500005][21];</span><br><span class="line"></span><br><span class="line">//链式前向星 </span><br><span class="line">inline void add(int u,int v) &#123;</span><br><span class="line">	To[++cnt]=v;</span><br><span class="line">	Next[cnt]=head[u];</span><br><span class="line">	head[u]=cnt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//记录当前节点和父亲节点 </span><br><span class="line">void dfs(int u,int Dad) &#123;</span><br><span class="line">	</span><br><span class="line">	//当前深度=父亲+1； </span><br><span class="line">	d[u]=d[Dad]+1;</span><br><span class="line">	</span><br><span class="line">	//2^0=1,u往上跳1格所到达的父亲; </span><br><span class="line">	fa[u][0]=Dad;</span><br><span class="line">	</span><br><span class="line">	//fa[u][1]=fa[fa[u][0]][0]</span><br><span class="line">	//以u为起点跳2格=自己的父亲跳一格</span><br><span class="line">	//以此类推，感性理解 </span><br><span class="line">	for(re int i=1; (1&lt;&lt;i)&lt;=d[u]; ++i) fa[u][i]=fa[fa[u][i-1]][i-1];</span><br><span class="line">	</span><br><span class="line">	//遍历u节点为起始点的所有边 </span><br><span class="line">	for(re int i=head[u]; i; i=Next[i])</span><br><span class="line">	</span><br><span class="line">	//因为之前是双向建边，所以为了防止来回跑，故进行判断 </span><br><span class="line">		if(Dad^To[i]) dfs(To[i],u);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//重点！倍增LCA </span><br><span class="line">inline int LCA(int a,int b) &#123;</span><br><span class="line">	</span><br><span class="line">	//确保a的深度小于b的深度</span><br><span class="line">	if(d[a]&gt;d[b]) std::swap(a,b);</span><br><span class="line">	</span><br><span class="line">	//接着要让它们跳到同一层,但一个一个慢慢往上跳太慢了，于是得定义它们的跳跃方式 </span><br><span class="line">	//跳跃方式让我们抽象理解一下 </span><br><span class="line">	//a是一个后面长眼睛的人 </span><br><span class="line">	//最初i很大,跳的非常远，远到天边,深度底</span><br><span class="line">	//而我们要做的是让a,b同层,跳到天边的,看不到,不予理会</span><br><span class="line">	//i慢慢的小了,小到跳到a的后面了，能看到了，那就让b跳到这里</span><br><span class="line">	//随着i慢慢缩小,b越来越小步的往前跳,慢慢缩进距离,直到同一层 </span><br><span class="line">	 for(re int i=20; i&gt;=0; --i) </span><br><span class="line">	 	if(d[a]&lt;=d[fa[b][i]]) b=fa[b][i];</span><br><span class="line">	</span><br><span class="line">	//如果跳到同一层后数值相同，证明找到LCA了</span><br><span class="line">	if(a==b) return a;</span><br><span class="line">	</span><br><span class="line">	//如果跳到同一层后数值仍不同，就一起往上跳，跳到fa[a][0]==fa[b][0]为止</span><br><span class="line">	//跳跃方式与上文类似，只是不比较深度，而改为比较数值是否相同，也就是祖先是否一致</span><br><span class="line">	//同一层开始一起跳，比较深度也没意义吧 </span><br><span class="line">	for(re int i=20; i&gt;=0; --i)</span><br><span class="line">		if(fa[a][i] != fa[b][i]) </span><br><span class="line">			a=fa[a][i],b=fa[b][i];</span><br><span class="line">	</span><br><span class="line">	//找到啦!</span><br><span class="line">	return fa[a][0]; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">	int N,M,S;</span><br><span class="line">	read(N),read(M),read(S);</span><br><span class="line">	for(re int i=1,X,Y; i&lt;N; ++i) &#123;</span><br><span class="line">		read(X),read(Y);</span><br><span class="line">		</span><br><span class="line">		//双向加边</span><br><span class="line">		add(X,Y),add(Y,X);</span><br><span class="line">	&#125;</span><br><span class="line">	dfs(S,0);</span><br><span class="line">	for(re int i=1,A,B; i&lt;=M; ++i) &#123;</span><br><span class="line">		read(A),read(B);</span><br><span class="line">		</span><br><span class="line">		//求二者的最近公共祖先 </span><br><span class="line">		printf(&quot;%d\n&quot;,LCA(A,B));</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E6%A8%A1%E6%9D%BF/" rel="tag"># 模板</a>
+              <a href="/tags/LCA/" rel="tag"># LCA</a>
+              <a href="/tags/%E5%9B%BE/" rel="tag"># 图</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/02/11/Windy%E6%95%B0%E9%A2%98%E8%A7%A3/" rel="prev" title="Windy数题解">
+                  <i class="fa fa-angle-left"></i> Windy数题解
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Retr67</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
