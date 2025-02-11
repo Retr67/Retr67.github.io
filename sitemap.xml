@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://retr67.github.io/2025/02/11/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/</loc>
+    
+    <lastmod>2025-02-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://retr67.github.io/2025/02/11/%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2025-02-11</lastmod>
@@ -281,6 +290,27 @@
   
   <url>
     <loc>http://retr67.github.io/tags/%E5%9B%BE/</loc>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/</loc>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E6%8E%A8%E7%90%86/</loc>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E8%A7%A3%E5%AF%86/</loc>
     <lastmod>2025-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

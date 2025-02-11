@@ -1,3 +1,4 @@
+http://retr67.github.io/2025/02/11/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/
 http://retr67.github.io/2025/02/11/%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0/
 http://retr67.github.io/2025/02/11/Windy%E6%95%B0%E9%A2%98%E8%A7%A3/
 http://retr67.github.io/2025/02/11/LCA%E6%A8%A1%E6%9D%BF/
@@ -35,3 +36,6 @@ http://retr67.github.io/tags/%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0/
 http://retr67.github.io/tags/%E6%A8%A1%E6%9D%BF/
 http://retr67.github.io/tags/LCA/
 http://retr67.github.io/tags/%E5%9B%BE/
+http://retr67.github.io/tags/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/
+http://retr67.github.io/tags/%E6%8E%A8%E7%90%86/
+http://retr67.github.io/tags/%E8%A7%A3%E5%AF%86/
