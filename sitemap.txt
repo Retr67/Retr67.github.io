@@ -1,3 +1,7 @@
+http://retr67.github.io/2025/02/13/%E6%98%9F%E9%99%85%E6%8B%93%E8%8D%92-outerWilds/
+http://retr67.github.io/2025/02/13/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E4%B8%8B-undertale/
+http://retr67.github.io/2025/02/13/%E5%8A%A8%E7%89%A9%E4%BA%95-animalWell/
+http://retr67.github.io/2025/02/11/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/
 http://retr67.github.io/2025/02/13/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B5%8F%E8%A7%88%E7%BD%91%E9%A1%B5%E6%AE%8B%E7%95%99%E3%80%81%E5%8D%A1%E5%B1%8F%E3%80%81%E7%B3%8A%E4%BD%8F%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/
 http://retr67.github.io/2018/11/07/LCA%E6%A8%A1%E6%9D%BF/
 http://retr67.github.io/2023/04/25/AI%E7%BB%98%E7%94%BB%E7%94%BB%E5%83%8F%E7%B4%A0%E4%BA%BA%E7%89%A9/
@@ -11,7 +15,6 @@ http://retr67.github.io/2018/10/26/%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0/
 http://retr67.github.io/2018/10/25/fread%E5%BF%AB%E8%AF%BB/
 http://retr67.github.io/tags/index.html
 http://retr67.github.io/2025/02/13/%E6%9C%BA%E5%8A%A8%E6%88%98%E5%A3%AB%E9%AB%98%E8%BE%BEOOTV-%E5%89%A7%E5%9C%BA%E7%89%88/
-http://retr67.github.io/2025/02/11/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/
 http://retr67.github.io/2025/02/09/Mirror-s-Edge/
 http://retr67.github.io/2025/02/04/hello-world/
 http://retr67.github.io/
@@ -39,8 +42,16 @@ http://retr67.github.io/tags/%E9%9A%8F%E6%9C%BA%E5%87%BD%E6%95%B0/
 http://retr67.github.io/tags/%E6%A8%A1%E6%9D%BF/
 http://retr67.github.io/tags/LCA/
 http://retr67.github.io/tags/%E5%9B%BE/
-http://retr67.github.io/tags/%E5%A5%A5%E4%BC%AF%E6%8B%89%E4%B8%81%E7%9A%84%E5%9B%9E%E5%BD%92/
 http://retr67.github.io/tags/%E6%8E%A8%E7%90%86/
 http://retr67.github.io/tags/%E8%A7%A3%E5%AF%86/
 http://retr67.github.io/tags/%E5%8A%A8%E7%94%BB%EF%BC%8C%E7%94%B5%E5%BD%B1%EF%BC%8C%E9%AB%98%E8%BE%BE/
 http://retr67.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/
+http://retr67.github.io/tags/%E6%A8%AA%E6%9D%BF/
+http://retr67.github.io/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/
+http://retr67.github.io/tags/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB/
+http://retr67.github.io/tags/%E6%8E%A2%E7%B4%A2/
+http://retr67.github.io/tags/%E4%BF%AF%E8%A7%86%E8%A7%92/
+http://retr67.github.io/tags/%E5%A5%BD%E6%95%85%E4%BA%8B/
+http://retr67.github.io/tags/RPG/
+http://retr67.github.io/tags/%E5%BC%B9%E5%B9%95/
+http://retr67.github.io/tags/3D/
