@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://retr67.github.io/2025/01/16/Google-Pixel7-pro%E4%BF%9D%E7%95%99root%E5%8D%87%E7%BA%A7%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%AE%89%E5%8D%9314%E8%87%B3%E5%AE%89%E5%8D%9315%EF%BC%89/</loc>
+    
+    <lastmod>2025-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/2022/12/06/%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%B1%8F%EF%BC%8C%E9%95%BF%E6%97%B6%E9%97%B4%E5%90%8E%E6%97%A0%E6%B3%95%E5%94%A4%E9%86%92%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2025-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://retr67.github.io/2025/02/13/%E6%98%9F%E9%99%85%E6%8B%93%E8%8D%92-outerWilds/</loc>
     
     <lastmod>2025-02-13</lastmod>
@@ -57,24 +75,6 @@
   
   <url>
     <loc>http://retr67.github.io/2023/04/25/AI%E7%BB%98%E7%94%BB%E7%94%BB%E5%83%8F%E7%B4%A0%E4%BA%BA%E7%89%A9/</loc>
-    
-    <lastmod>2025-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://retr67.github.io/2025/01/16/Google-Pixel7-pro%E4%BF%9D%E7%95%99root%E5%8D%87%E7%BA%A7%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%AE%89%E5%8D%9314%E8%87%B3%E5%AE%89%E5%8D%9315%EF%BC%89/</loc>
-    
-    <lastmod>2025-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://retr67.github.io/2022/12/06/%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%B1%8F%EF%BC%8C%E9%95%BF%E6%97%B6%E9%97%B4%E5%90%8E%E6%97%A0%E6%B3%95%E5%94%A4%E9%86%92%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2025-02-13</lastmod>
     
@@ -435,6 +435,41 @@
   
   <url>
     <loc>http://retr67.github.io/tags/3D/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/Pixel7Pro/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/root/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E8%B0%B7%E6%AD%8C%E6%89%8B%E6%9C%BA/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E5%AE%89%E5%8D%93/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2025-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
