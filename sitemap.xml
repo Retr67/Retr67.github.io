@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://retr67.github.io/2025/02/13/%E5%A1%9E%E5%B0%94%E8%BE%BE%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF/</loc>
+    
+    <lastmod>2025-02-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://retr67.github.io/2025/02/13/%E6%9C%BA%E5%8A%A8%E6%88%98%E5%A3%AB%E9%AB%98%E8%BE%BEOOTV-%E5%89%A7%E5%9C%BA%E7%89%88/</loc>
     
     <lastmod>2025-02-13</lastmod>
@@ -484,6 +493,20 @@
   
   <url>
     <loc>http://retr67.github.io/tags/%E9%AB%98%E8%BE%BE/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E5%A1%9E%E5%B0%94%E8%BE%BE%EF%BC%8Cswitch/</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://retr67.github.io/tags/%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF/</loc>
     <lastmod>2025-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
